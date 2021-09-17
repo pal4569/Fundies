@@ -1,1 +1,1 @@
-# A repository for my Racket assignments
+A repository for my Racket assignments
