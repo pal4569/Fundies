@@ -23,10 +23,10 @@
 ; The function "fix" takes any string as input and returns the string with the
 ; first character uppercase and all following characters lowercase.
 
-(define (fix str) ; EX: "michAel"
+(define (fix str) ; EX: "miChAel"
   (string-append
    (string-upcase(substring str 0 1)) ; "m" -> "M"
-   (string-downcase(substring str 1 (string-length str)))) ; "ichAel" -> "ichael"
+   (string-downcase(substring str 1 (string-length str)))) ; "iChAel" -> "ichael"
   ) ; returns "Michael"
 
 ; The salutation function calls on the "fix" function for each variable so that

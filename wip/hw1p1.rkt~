@@ -8,7 +8,7 @@
 ; look them up in the DrRacket documentation.)
 
 
-; (tosh "london" 5.3)
+; (tosh "london" 5.0)
 (define (tosh e f)
   (max
    (string-length e)
