@@ -20,22 +20,3 @@
 ; and taking the remainder; so the remainder of 1 / 5 is 1,
 ; the remainder of 4 / 5 is 4; and the remainder of 5 / 5
 ; is back to 0. In BSL, look at the remainder function.
-
-(define (create-UFO-scene height)
-  (place-image UFO height 50 (empty-scene 300 100)))
-     
-(define UFO
-  (overlay (circle 10 'solid 'green)
-           (rectangle 40 4 'solid 'green)))
-
-; (define (letters str)
-  ; (for/list ([i '(1 2 3)])
-    ; (display i)))
-
-(define stuff
-  (list (create-UFO-scene 30)
-        (create-UFO-scene 50)))
-(for ([i '(1 2 3)])
-    (display i))
-; (run-movie 2 stuff)
-     
