@@ -37,7 +37,7 @@
 ; it back to an integer. This will slow the program down, because the result of dividing
 ; an integer and rounding it up will cause "i" to increase slower. For example, if
 ; "slowness" was 10, i will loop through the following values: 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, etc
-; which will all round up to 10, meaning the animate function will have to run 10 times before i will
+; which will all round up to 1, meaning the animate function will have to run 10 times before i will
 ; change to 2. I used the modulu function ("remainder") at the end to restart the animaton. Once i
 ; reaches string-length + 1, it will return back to zero.
 
