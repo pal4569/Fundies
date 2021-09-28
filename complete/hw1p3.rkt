@@ -26,12 +26,13 @@
 (define (fix str) ; EX: "michAel"
   (string-append
    (string-upcase(substring str 0 1)) ; "m" -> "M"
-   (string-downcase(substring str 1 (string-length str)))) ; "ichAel" -> "ichael"
-  ) ; returns "Michael"
+   (string-downcase(substring str 1 (string-length str))))) ; "ichAel" -> "ichael"
+   ; returns "Michael"
 
 ; The salutation function calls on the "fix" function for each variable so that
 ; each one is formatted properly.
 
-(define (salutation first last greet)
-  (string-append (fix greet) " " (fix first) " " (fix last))
-  )
+(define (salutation greet first last)
+  (string-append (fix greet) " " (fix first) " " (fix last)))
+
+(salutation "WeLcOMe" "MIChael" "CallAhan")

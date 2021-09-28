@@ -18,8 +18,11 @@
       (floor
        (abs f)))
      0 1))))
-; ACTUAL-OUTPUT: 6
-; EXPECTED-OUTPUT: 6
+(define ACTUAL-OUTPUT
+  (tosh "london" 5.3))
+(define EXPECTED-OUTPUT 6)
+
+(if (= ACTUAL-OUTPUT EXPECTED-OUTPUT) #true #false)
 
 ; TODO: replace "SIGNATURE HERE" with a signature for the function tosh
 ; (Since this code is nonsense, do not provide a purpose statement)
